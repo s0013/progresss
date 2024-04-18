@@ -5,14 +5,11 @@ import Academic from './component/Academic';
 import Address from './component/Address';
 import Submission from './component/Submission';
 
-
 function getSteps() {
   return ['Personal Details', 'Academic Details', 'Address Details', 'Submission'];
 }
 
 const HorizontalLinearStepper = () => {
-
-
   const [activeStep, setActiveStep] = useState(0);
   const steps = getSteps();
 
@@ -41,7 +38,6 @@ const HorizontalLinearStepper = () => {
 
   return (
     <div>
-     
       <div className="stepperContainer">
         <Stepper alternativeLabel activeStep={activeStep}>
           {steps.map((label, index) => (
@@ -52,16 +48,20 @@ const HorizontalLinearStepper = () => {
         </Stepper>
       </div>
       <div>{getStepContent(activeStep)}</div>
-      <div>
-        {activeStep !== steps.length && (
-          <div>
-            <Button disabled={activeStep === 0} onClick={handleBack} className="button">
-              Back
-            </Button>
-            <Button variant="contained" color="primary" onClick={handleNext} className="button">
-              {activeStep === steps.length - 1 ? 'Finish' : 'Next'}
-            </Button>
-          </div>
+      <div style={{ display: 'flex', justifyContent: 'space-between', marginTop: '20px' }}>
+        {activeStep !== 0 && (
+          <Button variant="contained" color="primary" onClick={handleBack}>
+            Back
+          </Button>
+        )}
+        {activeStep !== steps.length - 1 ? (
+          <Button variant="contained" color="primary" onClick={handleNext}>
+            Next
+          </Button>
+        ) : (
+          <Button variant="contained" color="primary">
+            Finish
+          </Button>
         )}
       </div>
     </div>

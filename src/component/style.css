@@ -1,0 +1,66 @@
+.personal-form-container {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  .personal-form {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .form-control {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+  
+  .btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .academic-form-container {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .academic-form {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  .address-form-container {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .address-form {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+textarea.form-control {
+    height: 50px; /* Adjust the height of the textarea */
+  }
