@@ -3,30 +3,21 @@ import React, { useState } from 'react';
 const Academic = () => {
   // State variables to hold the academic data
   const [academicData, setAcademicData] = useState({
-    tenth: {
-      schoolName: '',
-      marks: ''
-    },
-    twelfth: {
-      collegeName: '',
-      marks: ''
-    },
-    graduation: {
-      collegeName: '',
-      universityName: '',
-      graduationYear: ''
-    }
+    tenthSchoolName: '',
+    tenthMarks: '',
+    twelfthCollegeName: '',
+    twelfthMarks: '',
+    graduationCollegeName: '',
+    graduationUniversityName: '',
+    graduationYear: ''
   });
 
   // Function to handle form field changes
-  const handleChange = (e, field, subField) => {
+  const handleChange = (e, field) => {
     const { value } = e.target;
     setAcademicData({
       ...academicData,
-      [field]: {
-        ...academicData[field],
-        [subField]: value
-      }
+      [field]: value
     });
   };
 
@@ -37,19 +28,13 @@ const Academic = () => {
     localStorage.setItem('academicData', JSON.stringify(academicData));
     // Optionally, you can reset the form after submission
     // setAcademicData({
-    //   tenth: {
-    //     schoolName: '',
-    //     marks: ''
-    //   },
-    //   twelfth: {
-    //     collegeName: '',
-    //     marks: ''
-    //   },
-    //   graduation: {
-    //     collegeName: '',
-    //     universityName: '',
-    //     graduationYear: ''
-    //   }
+    //   tenthSchoolName: '',
+    //   tenthMarks: '',
+    //   twelfthCollegeName: '',
+    //   twelfthMarks: '',
+    //   graduationCollegeName: '',
+    //   graduationUniversityName: '',
+    //   graduationYear: ''
     // });
     alert('Data saved successfully');
   };
@@ -63,15 +48,15 @@ const Academic = () => {
           <input
             type="text"
             placeholder="School Name"
-            value={academicData.tenth.schoolName}
-            onChange={(e) => handleChange(e, 'tenth', 'schoolName')}
+            value={academicData.tenthSchoolName}
+            onChange={(e) => handleChange(e, 'tenthSchoolName')}
             className="form-control"
           />
           <input
             type="text"
             placeholder="Marks"
-            value={academicData.tenth.marks}
-            onChange={(e) => handleChange(e, 'tenth', 'marks')}
+            value={academicData.tenthMarks}
+            onChange={(e) => handleChange(e, 'tenthMarks')}
             className="form-control"
           />
         </div>
@@ -80,15 +65,15 @@ const Academic = () => {
           <input
             type="text"
             placeholder="College Name"
-            value={academicData.twelfth.collegeName}
-            onChange={(e) => handleChange(e, 'twelfth', 'collegeName')}
+            value={academicData.twelfthCollegeName}
+            onChange={(e) => handleChange(e, 'twelfthCollegeName')}
             className="form-control"
           />
           <input
             type="text"
             placeholder="Marks"
-            value={academicData.twelfth.marks}
-            onChange={(e) => handleChange(e, 'twelfth', 'marks')}
+            value={academicData.twelfthMarks}
+            onChange={(e) => handleChange(e, 'twelfthMarks')}
             className="form-control"
           />
         </div>
@@ -97,22 +82,22 @@ const Academic = () => {
           <input
             type="text"
             placeholder="College Name"
-            value={academicData.graduation.collegeName}
-            onChange={(e) => handleChange(e, 'graduation', 'collegeName')}
+            value={academicData.graduationCollegeName}
+            onChange={(e) => handleChange(e, 'graduationCollegeName')}
             className="form-control"
           />
           <input
             type="text"
             placeholder="University Name"
-            value={academicData.graduation.universityName}
-            onChange={(e) => handleChange(e, 'graduation', 'universityName')}
+            value={academicData.graduationUniversityName}
+            onChange={(e) => handleChange(e, 'graduationUniversityName')}
             className="form-control"
           />
           <input
             type="text"
             placeholder="Graduation Year"
-            value={academicData.graduation.graduationYear}
-            onChange={(e) => handleChange(e, 'graduation', 'graduationYear')}
+            value={academicData.graduationYear}
+            onChange={(e) => handleChange(e, 'graduationYear')}
             className="form-control"
           />
         </div>
