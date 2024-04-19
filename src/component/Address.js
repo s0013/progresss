@@ -64,6 +64,7 @@ const Address = () => {
             className="form-control"
           >
             <option value="">Select Country</option>
+            <option value="USA">India</option>
             <option value="USA">USA</option>
             <option value="Canada">Canada</option>
             <option value="UK">UK</option>

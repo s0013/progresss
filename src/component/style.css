@@ -2,12 +2,16 @@
     max-width: 400px;
     margin: 0 auto;
   }
-  
   .personal-form {
     padding: 20px;
-    border: 1px solid #ccc;
+    font-size: 18px;
+    font-weight: bold;
+    border: 1px solid #343434;
     border-radius: 5px;
+    background: linear-gradient(45deg, rgba(0,0,0,0.5), rgba(255,255,255,0.5)); /* Black gradient transparent background */
+    box-shadow: 0 0 10px rgba(150, 0, 150, 0.5), 0 0 20px rgba(0, 0, 255, 0.5); /* Glowing border with purple and blue colors */
   }
+  
   
   .form-group {
     margin-bottom: 15px;
@@ -43,12 +47,18 @@
   .academic-form-container {
     max-width: 600px;
     margin: 0 auto;
+    
   }
   
   .academic-form {
     padding: 20px;
     border: 1px solid #ccc;
+    border: 1px solid #343434;
     border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    background: linear-gradient(45deg, rgba(0,0,0,0.5), rgba(255,255,255,0.5)); /* Black gradient transparent background */
+    box-shadow: 0 0 10px rgba(150, 0, 150, 0.5), 0 0 20px rgba(0, 0, 255, 0.5); /* Glowing border with purple and blue colors */
   }
   .address-form-container {
     max-width: 600px;
@@ -59,6 +69,10 @@
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    background: linear-gradient(45deg, rgba(0,0,0,0.5), rgba(255,255,255,0.5)); /* Black gradient transparent background */
+    box-shadow: 0 0 10px rgba(150, 0, 150, 0.5), 0 0 20px rgba(0, 0, 255, 0.5); /* Glowing border with purple and blue colors */
   }
   
 textarea.form-control {

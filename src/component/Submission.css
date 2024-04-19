@@ -1,0 +1,93 @@
+.submission-heading {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .preview-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 20px;
+  }
+  
+  .preview-heading {
+    text-align: center;
+    
+  }
+  
+  .preview-table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #ddd; /* Border style */
+    margin-top: 20px;
+    background: linear-gradient(45deg, rgba(0,0,0,0.5), rgba(255,255,255,0.5)); /* Black gradient transparent background */
+    box-shadow: 0 0 10px rgba(150, 0, 150, 0.5), 0 0 20px rgba(0, 0, 255, 0.5); /* Glowing border with purple and blue colors */
+  }
+  
+  
+  .preview-label {
+    font-size: 18px;
+    font-weight: bold;
+    
+    display: block;
+    padding: 10px;
+    border: 1px solid black; /* Border style for table cells */
+  }
+  
+  .preview-data {
+    padding: 10px;
+    border: 1px solid black; /* Border style for table cells */
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .passport-image {
+    max-width: 200px;
+    border: 1px solid black; /* Border style for table cells */
+  }
+  
+  .buttons-container {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .edit-button {
+    padding: 10px 20px;
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  
+  .save-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .download-button {
+    background-color: #4CAF50; /* Green background */
+    border: none; /* Remove borders */
+    color: white; /* White text */
+    text-align: center; /* Center text */
+    text-decoration: none; /* Remove underline */
+    display: inline-block; /* Display as inline block */
+    font-size: 16px; /* Set font size */
+    margin: 4px 2px; /* Add some margin */
+    cursor: pointer; /* Add a pointer cursor on hover */
+    padding: 10px 24px; /* Add padding */
+    border-radius: 5px; /* Add rounded corners */
+  }
+  
+  .download-button:hover {
+    background-color: #45a049; /* Darker green on hover */
+  }
+  

@@ -36,6 +36,12 @@ const HorizontalLinearStepper = () => {
     setActiveStep((prevActiveStep) => prevActiveStep - 1);
   };
 
+  const handleFinish = () => {
+    alert('Form submitted successfully!');
+    // Navigate to Personal.js (Assuming Personal.js is in the same directory)
+    setActiveStep(0); // Reset the stepper to the first step
+  };
+
   return (
     <div>
       <div className="stepperContainer">
@@ -59,7 +65,7 @@ const HorizontalLinearStepper = () => {
             Next
           </Button>
         ) : (
-          <Button variant="contained" color="primary">
+          <Button variant="contained" color="primary" onClick={handleFinish}>
             Finish
           </Button>
         )}
